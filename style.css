@@ -558,7 +558,7 @@ form > button:hover {
         min-width: none;
     }
     #name {
-        font-size: 4.3rem;
+        font-size: 4rem;
         margin: 20px 0;
     }
     #main-left {
@@ -571,7 +571,7 @@ form > button:hover {
         font-size: 5rem;
     }
     .main-left-bottom > p{
-        font-size: 2.5rem;
+        font-size: 2.2rem;
         line-height: 3.5rem;
     }
     #main-right {
