@@ -511,10 +511,6 @@ form > button:hover {
 
      /* navbar ----------------- */
 
-    .nav-bar-container {
-        margin: 0 5%;
-
-    }
     #menu-logo {
         display: block;
         color: var(--menu-icon);
