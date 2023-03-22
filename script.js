@@ -8,12 +8,11 @@ menuIcon.addEventListener('click', () => {
     menuIcon.classList.toggle('fa-times');
 });
 
-// navLinks.forEach((navLinks) => {
-//     navLinks.addEventListener('click', () => {
-//         navBar.classList.remove('active');
-//         menuIcon.classList.toggle('fa-times');
-//     });
-// });
+navLinks.addEventListener('click', () => {
+    navBar.classList.remove('active');
+    menuIcon.classList.toggle('fa-times');
+});
+
 
 //---------------------------Light Dark mode Switch
 

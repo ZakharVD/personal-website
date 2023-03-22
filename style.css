@@ -11,6 +11,9 @@ html {
 }
 body {
     min-height: 100vh;
+    max-width: 60%;
+    margin-left: auto;
+    margin-right: auto;
     background-color: var(--background-color);
     font-family: 'Outfit', sans-serif;
     font-size: 16px;
@@ -32,11 +35,9 @@ body {
     --background-color:#1b1a1f;
     --main-color: #2d2d2f;
     --secondary-color: #f9f9f9;
-    /* --buttons-color:; */
     --highlight-color: rgba(255 195 75 / 75%);
     --navbar-bg-color: #131313;
     --menu-icon: #eaeaea;
-    /* --theme-button: #707070; */
     --box-shadow: none;
 }
 
@@ -95,7 +96,6 @@ body {
     position: absolute;
     content: '';
     background-color: var(--theme-button); /* moon element */
-    /* transition: ease 0.1s; */
 }
 .switch input:checked + slider::after {
     left: 80%;
@@ -113,17 +113,11 @@ body {
     background: linear-gradient(180deg, rgba(255 255 255 / 0 ) 55%, var(--highlight-color) 50%);
 }
 
-
 /* Navigation Bar ---------------------------- */
 
 header {
     width: 100%;
     padding: 3rem 0;
-    /* padding: 2rem 4rem; */ 
-    /* margin-bottom: 30px; */
-}
-.nav-bar-container {
-    margin: 0 15%;
 }
 nav {
     display: flex;
@@ -159,32 +153,20 @@ nav ul a:hover {
 nav ul.active {
     left: 0;
     margin: 0;
-    /* width: 100vh; */
 }
-
 
 /* Decription ----------------------------------------------------------------- */
 
 #main {
-    margin: 0 15%;
     margin-bottom: 48px;
 }
 .main-flex-container {
     display: flex;
-    /* min-height: 350px; */
-    /* max-height: 600px; */
 }
-/* .main-flex-subcontainer {
-    background-color: #fff;
-    border-radius: 20px;
-} */
 #main-left {
     width: 65%;
     margin-right: 25px;
-    /* padding: 20px; */
     font-size: 18px;
-    /* border-radius: 20px; */
-    /* background-color: #fff; */
     display: flex;
     flex-direction: column;
 }
@@ -213,7 +195,6 @@ nav ul.active {
 }
 #main-right {
     width: 35%;
-    /* padding: 20px; */
     display: flex;
     flex-direction: column;
 }
@@ -277,9 +258,6 @@ nav ul.active {
 
 /* Skills section ------------------------------ */
 
-#skills {
-    margin: 0 15%;
-}
 .skills-title {
     background-color: var(--main-color);
     padding: 20px;
@@ -304,21 +282,26 @@ nav ul.active {
     font-size: 1.5rem;
     color: var(--secondary-color);
     padding-top: 20px;
+    padding-left: 5px;
+    padding-bottom: 5px;
+    padding-right: 5px;
 }
 .skill-icon-cont {
     font-size: 4.5rem;
     text-align: center;
     display: flex;
     flex-direction: column;
+
 }
 .skill-icon-cont i {
     transition: .5s linear;
+    padding: 3px;
 }
 .skill-icon-cont > i:hover {
     transform: rotateY(180deg);
 }
 
-/* separete icons */
+/* separate icons */
 #html-logo-container {
     color: #e34c26;
 }
@@ -336,7 +319,6 @@ nav ul.active {
 /* Projects section -------------------------------*/
 
 #projects {
-    margin: 0 15%;
     width: auto; /* to be adjusted / removed*/
 }
 /* title */
@@ -408,7 +390,8 @@ nav ul.active {
     justify-content: space-between;
 }
 .project-link-cont button {
-    padding: 10px 20px;
+    padding: 15px 25px;
+    margin-right: 3px;
     border: none;
     border-radius: 15px;
     font-family: 'Outfit', sans-serif;
@@ -423,9 +406,6 @@ nav ul.active {
 
 /* Contact form --------------------------*/
 
-#contact-form {
-    margin: 0 15%;
-}
 .contact-form-container {
     display: flex;
     align-items: center;
@@ -472,11 +452,49 @@ form > button:hover {
     filter: brightness(90%);
 }
 
-/* Media Tablet */
+/* Media small laptop ----------------------------- */
+
+@media screen and (max-width: 1600px) {
+    body {
+        max-width: 70%;
+    }
+    .project-link-cont button {
+        padding: 10px 15px;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    body {
+        max-width: 70%;
+    }
+    .project-link-cont button {
+        padding: 8px 13px;
+    }
+    #name {
+        font-size: 2rem;
+    }
+    .main-left-bottom > p {
+        font-size: 1.1rem;
+        letter-spacing: normal;
+    }
+}   
+
+@media screen and (max-width: 1200px) {
+    body {
+        max-width: 80%;
+    }
+}
+
+
+
+/* Media Tablet ----------------------------------- */
 
 @media screen and (max-width: 991px) {
     header {
         padding: 2rem 3rem;
+    }
+    body {
+        max-width: 85%;
     }
 }
 
@@ -486,7 +504,9 @@ form > button:hover {
 @media screen and (max-width: 767px) {
     html {
         font-size: 50%;
-        /* margin: 0 2%; */
+    }
+    body {
+        max-width: 90%;
     }
 
      /* navbar ----------------- */
@@ -530,7 +550,6 @@ form > button:hover {
     /* description -------------------- */
 
     #main {
-        margin: 0 2%;
         margin-bottom: 25px;
     }
     .main-flex-container {
@@ -546,21 +565,19 @@ form > button:hover {
         width: 100%;
         margin: 0;
         margin-bottom: 25px;
-        /* padding: 20px; */
     }
     .main-left-top {
         text-align: center;
         font-size: 5rem;
     }
     .main-left-bottom > p{
-        font-size: 3rem;
+        font-size: 2.7rem;
         line-height: 3.5rem;
     }
     #main-right {
         width: 100%;
     }
     .main-right-top {
-        /* max-height: 250px; */
         margin-bottom: 25px;
         height: 50vh;
     }
@@ -573,38 +590,35 @@ form > button:hover {
     }
     #resume-btn {
         font-size: 3rem;
+        color: black;
     }
     .contact-icons-container > i {
         font-size: 4rem;
     }
 
-/* skills section ------------------------ */
+    /* skills section ------------------------ */
 
-    #skills {
-        margin: 0 2%;
-    }
+
     .skills-title > h2 {
         font-size: 5rem;
     }
     .skills-container {
         margin-bottom: 25px;
-        flex-basis: 0;
+        flex-flow: wrap;
         height: auto;
     }
     .skill-icon-cont {
        font-size: 7rem;
-       max-width: 33%;
+       width: 33%;
     }
-    .skills-container i {
-        
+    .skill-icon-cont p {
+        font-size: 2rem;
     }
    
 
     /* Project section ------------------- */
 
-    #projects {
-        margin: 0 2%;
-    }
+
     .projects-title > h2 {
         font-size: 5rem;
     }
@@ -632,9 +646,7 @@ form > button:hover {
 
     /* contact form  -----------------------*/
 
-   #contact-form {
-        margin: 0 2%;
-    }
+
     form {
         width: 100%;
     }
@@ -643,5 +655,8 @@ form > button:hover {
     }
     form input, form textarea {
         font-size: 2rem;
+    }
+    #form-sumbit-btn {
+        color: black;
     }
 }
