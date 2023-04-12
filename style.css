@@ -360,7 +360,7 @@ nav ul.active {
 .project-image-cont > img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: unset;
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
 }
@@ -659,7 +659,7 @@ form > button:hover {
     form input, form textarea {
         font-size: 2rem;
     }
-    #form-sumbit-btn {
+    #form-submit-btn {
         color: black;
     }
 }

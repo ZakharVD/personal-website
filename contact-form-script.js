@@ -1,19 +1,20 @@
-const formSumbitBtn = document.getElementById('form-sumbit-btn');
-const emailAdress = document.getElementById('form-email');
+const formSumbitBtn = document.getElementById("form-submit-btn");
+// const emailAdress = document.getElementById("form-email");
+// const name = document.getElementById("form-name");
+// const message = document.getElementById("form-massage");
+const form = document.getElementById('email-form');
 
-function sendEmail() {
-    Email.send({
-        Host : "smtp.elasticemail.com",
-        Username : "dev.zakharvdovchenko@gmail.com",          
-        Password : "777E0425DC833C0E58513AF35735402B4BC8",         
-        To : 'vdovchenkozakhar@gmail.com',
-        From : emailAdress.value,
-        Subject : "New Contact Form Inquiry",
-        Body : "And this is the body" // to be replaced
-    }).then(
-      message => alert(message)
-    );
-}
+(function() {
+  emailjs.init("8KVvybsx5iuDXHooY");
+}())
+sendEmail = () => {
+  const serviceID = "service_gn56bfr";
+  const templeteID = "template_s0r5leo";
 
+  emailjs
+    .sendForm(serviceID, templeteID, form)
+    .then((res) => alert("message sent"))
+    .catch((err) => console.log(err));
+};
 
-formSumbitBtn.addEventListener('click', sendEmail);
+formSumbitBtn.addEventListener("click", sendEmail);

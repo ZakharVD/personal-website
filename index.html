@@ -113,7 +113,7 @@
             <div class="project-description-cont">
                 <div class="project-description">
                     <h4>E-commerce store</h4>
-                    <p>This full-stuck application is built using <span>React</span>, <span>Tailwind</span>, and <span>Firebase</span>. It includes features such as user authentication, a product cart, and a favorites page to save products. The creation of this application introduced me to advanced React topics such as <span>React Routing</span>, <span>Hooks</span>, and <span>Contexts</span>. Currently, I am working to modifying the app by using <span>Redux</span> and <span>TypeScript</span>.</p>
+                    <p>This full-stuck application is built using <span>React</span>, <span>Tailwind</span>, and <span>Firebase</span>. It has features such as user authentication, a product cart, and a favorites page to save products. The creation of this application introduced me to advanced React topics such as <span>React Routing</span>, <span>Hooks</span>, and <span>Contexts</span>. Currently, I am working on modifying the app by using <span>Redux</span> and <span>TypeScript</span>.</p>
                 </div>
                 <div class="project-link-cont">
                     <a href="https://main--ubiquitous-dasik-b9f7b4.netlify.app/" target="_blank">View Demo</a>
@@ -159,21 +159,21 @@
 <!-- Contact form -->
 <section id="contact-form">
     <div class="contact-form-container">
-        <form>
+        <form id="email-form">
             <h4>Let's have a <span class="highlight">chat</span></h4>
-            <input type="text" id="form-name" placeholder="Name (optional)" required>
-            <input type="text" id="form-conpany" placeholder="Company Name (optional)" required>
-            <input type="email" id="form-email" placeholder="Email" required>
-            <input type="text" id="form-phone" placeholder="Phone Number (optional)" required>
-            <textarea id="form-massage" rows="4" placeholder="Enter your message" required></textarea>
-            <button id="form-sumbit-btn">Send</button>
+            <input type="text" id="form-name" placeholder="Name (optional)" name="name">
+            <input type="text" id="form-conpany" placeholder="Company Name (optional)" name="company">
+            <input type="email" id="form-email" placeholder="Email" required name="email">
+            <input type="text" id="form-phone" placeholder="Phone Number (optional)" name="phone">
+            <textarea id="form-massage" rows="4" placeholder="Enter your message" required name="message"></textarea>
+            <button id="form-submit-btn" type="button">Send</button>
         </form>
     </div>
 </section>
     
     <!-- scripts -->
     <script src="script.js"></script>
-    <!-- <script src="https://smtpjs.com/v3/smtp.js"></script>
-    <script src="contact-form-script.js"></script> -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="contact-form-script.js"></script>
 </body>
 </html>
