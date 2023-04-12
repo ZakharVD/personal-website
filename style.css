@@ -375,6 +375,8 @@ nav ul.active {
 #project-image-3 {
     width: 100%;
     height: 100%;
+    opacity: 30%;
+    filter: blur(5px);
 }
 .project-description-cont {
     height: 60%;
