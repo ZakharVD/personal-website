@@ -10,7 +10,7 @@ html {
     color: var(--secondary-color);
 }
 body {
-    min-height: 100vh;
+    min-height: 100%;
     max-width: 60%;
     margin-left: auto;
     margin-right: auto;
@@ -321,7 +321,7 @@ nav ul.active {
 /* Projects section -------------------------------*/
 
 #projects {
-    width: auto; /* to be adjusted / removed*/
+     /* to be adjusted / removed*/
 }
 /* title */
 .projects-title {
@@ -339,6 +339,7 @@ nav ul.active {
 .projects-container {
     display: flex;
     margin-bottom: 48px;
+    height: 520px;
 }
 .project-card {
     width: 33%;
@@ -386,7 +387,7 @@ nav ul.active {
     justify-content: space-between;
 }
 .project-description h4 {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     text-align: center;
 }
 .project-description span {
@@ -470,11 +471,17 @@ form > button:hover {
     .project-link-cont a {
         padding: 10px 15px;
     }
+    .projects-container {
+        height: 520px;
+    }
 }
 
 @media screen and (max-width: 1300px) {
     body {
         max-width: 70%;
+    }
+    .projects-container {
+        height: 500px;
     }
     .project-link-cont a {
         padding: 8px 13px;
@@ -492,6 +499,12 @@ form > button:hover {
     body {
         max-width: 80%;
     }
+    .project-image-cont {
+        height: 30%;
+    }
+    .project-description-cont {
+        height: 70%;
+    }
 }
 
 
@@ -504,6 +517,9 @@ form > button:hover {
     }
     body {
         max-width: 85%;
+    }
+    .projects-container {
+        height: 650px;
     }
 }
 
@@ -630,6 +646,7 @@ form > button:hover {
     .projects-container {
         flex-direction: column;
         margin-bottom: 5px;
+        height: auto;
     }
     .project-card {
         width: 100%;
