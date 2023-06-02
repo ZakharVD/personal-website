@@ -276,10 +276,13 @@ nav ul.active {
     padding: 20px;
     border-radius: 20px;
     display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
     justify-content: space-around;
     margin-bottom: 48px;
     box-shadow: var(--box-shadow);
 }
+
 .skills-container p {
     font-size: 1.5rem;
     color: var(--secondary-color);
@@ -293,19 +296,22 @@ nav ul.active {
     text-align: center;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    width: 170px;
 
 }
 .skill-icon-cont i {
     transition: .5s linear;
     padding: 3px;
+    justify-content: center;
 }
-.skill-icon-cont > i:hover {
-    transform: rotateY(180deg);
-}
+
+/* new additions */
+
 
 /* separate icons */
 #html-logo-container {
-    color: #e34c26;
+    fill: #e34c26;
 }
 #css-logo-container {
     color: #2965f1;
@@ -315,6 +321,34 @@ nav ul.active {
 }
 #react-logo-container {
     color: #61DBFB;
+}
+#nodejs-logo-container {
+    color: #3C873A;
+}
+#ts-logo-container {
+    align-items: center;
+    margin-top: 7px;
+}
+#ts-logo {
+    fill: #007acc;
+    width: 65px;
+    height: 63px;
+}
+#nextjs-logo-container {
+    align-items: center;
+    margin-top: 7px;
+}
+#nextjs-logo {
+    fill: var(--secondary-color);
+    height: 65px;
+    width: 65px;
+}
+#redux-logo-container {
+    align-items: center;
+}
+#redux-logo-container > img {
+    height: 70px;
+    width: 70px;
 }
 
 
@@ -493,6 +527,9 @@ form > button:hover {
         font-size: 1.1rem;
         letter-spacing: normal;
     }
+    .skill-icon-cont {
+        width: 130px;
+    }
 }   
 
 @media screen and (max-width: 1200px) {
@@ -520,6 +557,9 @@ form > button:hover {
     }
     .projects-container {
         height: 650px;
+    }
+    .skill-icon-cont {
+        width: 110px;
     }
 }
 
@@ -630,11 +670,28 @@ form > button:hover {
     }
     .skill-icon-cont {
        font-size: 7rem;
-       width: 33%;
+       width: 27%;
     }
     .skill-icon-cont p {
         font-size: 2rem;
     }
+    #nextjs-logo {
+        fill: var(--secondary-color);
+        height: 56px;
+        width: 56px;
+    }
+    #ts-logo-container {
+        margin-top: 4px;
+    }
+    #ts-logo {
+        height: 56px;
+        width: 56px;
+    }
+    #redux-logo-container > img {
+        height: 56px;
+        width: 56px;
+    }
+    
    
 
     /* Project section ------------------- */
