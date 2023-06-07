@@ -225,7 +225,9 @@ nav ul.active {
 }
 /* contacts container*/
 .resume-button-container{
+    display: flex;
     text-align: center;
+    width: 100%;
 }
 #resume-btn {
     font-family: 'Outfit', sans-serif;
@@ -236,6 +238,8 @@ nav ul.active {
     border-radius: 15px;
     background-color: var(--buttons-color);
     width: 100%;
+    text-decoration: none;
+    color: #1b1a1f;
 }
 #resume-btn:hover {
     cursor: pointer;
