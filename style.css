@@ -370,90 +370,55 @@ nav ul.active {
     font-size: 2.5rem;
     margin: 0;
 }
-/* projects container */
-.projects-container {
-    display: flex;
-    margin-bottom: 48px;
-    height: 500px;
-} 
+/* Projects */
 .project-card {
-    width: 33%;
-    height: 500px;
-    background-color: var(--main-color);
+    margin-bottom: 25px;
     border-radius: 20px;
+    width: full;
+    height: auto;
     display: flex;
-    flex-direction: column;
     box-shadow: var(--box-shadow);
+    background-color: var(--main-color);
 }
-#project-1 {
-    margin-right: 25px;
+.project-card-left {
+    width: 35%;
 }
-#project-2 {
-    margin-right: 25px;
-}
-.project-image-cont {
-    height: 40%;
-}
-.project-image-cont > img {
+.project-card-left > img {
     width: 100%;
     height: 100%;
-    object-fit: inherit;
-    border-top-right-radius: 20px;
+    object-fit: cover;
     border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
 }
-#project-image-1 {
-    width: 100%;
-    height: 100%;
-}
-#project-image-2 {
-    width: 100%;
-    height: 100%;
-}
-#project-image-3 {
-    width: 100%;
-    height: 100%;
-}
-.project-description-cont {
-    height: 60%;
+.project-card-right {
     padding: 20px;
+    width: 65%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
-.project-description h4 {
-    margin-bottom: 15px;
+.project-title {
     text-align: center;
 }
 .project-description span {
-    font-weight: 600;
-    text-decoration: underline;
+        font-weight: 600;
+        text-decoration: underline;
 }
-.project-link-cont {
+.project-link-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    margin-top: 10px;
 }
-.project-link-cont a {
-    padding: 15px 25px;
+.project-link-container > a {
+    padding: 5px 15px;
     margin-right: 3px;
     border: none;
-    border-radius: 15px;
+    border-radius: 10px;
     font-family: 'Outfit', sans-serif;
     font-size: 1rem;
     color: var(--secondary-color);
     background-color: var(--background-color);
     text-decoration: none;
-}
-#project-1-btn {
-    width: 100%;
-    text-align: center;
-}
-.project-link-cont a:hover {
-    cursor: pointer;
-    filter: brightness(90%);
-}
-#marrix-power-link {
-    text-decoration: underline;
-    color: inherit
 }
 
 /* Contact form --------------------------*/
@@ -514,38 +479,11 @@ form > button:hover {
     body {
         max-width: 70%;
     }
-    .project-link-cont a {
-        padding: 10px 15px;
-    }
-    .project-card {
-        height: 100%;
-    }
-    .projects-container {
-        height: 650px;
-    }
-    .project-image-cont {
-        height: 28%;
-    }
-    .project-description-cont {
-        height: 72%;
-    }
 }
 
 @media screen and (max-width: 1300px) {
     body {
         max-width: 70%;
-    }
-    .projects-container {
-        height: 700px;
-    }
-    .project-image-cont {
-        height: 30%;
-    }
-    .project-description-cont {
-        height: 70%;
-    }
-    .project-link-cont a {
-        padding: 8px 13px;
     }
     #name {
         font-size: 2rem;
@@ -563,12 +501,6 @@ form > button:hover {
     body {
         max-width: 80%;
     }
-    .project-image-cont {
-        height: 30%;
-    }
-    .project-description-cont {
-        height: 70%;
-    }
 }
 
 
@@ -581,15 +513,6 @@ form > button:hover {
     }
     body {
         max-width: 85%;
-    }
-    .projects-container {
-        height: 750px;
-    }
-    .project-image-cont {
-        height: 28%;
-    }
-    .project-description-cont {
-        height: 72%;
     }
     .skill-icon-cont {
         width: 110px;
@@ -729,31 +652,32 @@ form > button:hover {
 
     /* Project section ------------------- */
 
-    .projects-title > h2 {
-        font-size: 5rem;
-    }
-    .projects-container {
+    .project-card {
         flex-direction: column;
-        margin-bottom: 5px;
         height: auto;
     }
-    .project-card {
-        width: 100%;
-        font-size: 2.7rem;
-        margin-bottom: 25px;
+    .project-card-left {
+        width: auto;
+        height: 30%;
     }
-    .project-image-cont {
-        height: 40%;
+    .project-card-right {
+        width: auto;
+        height: 70%;
     }
-    .project-description-cont {
-        height: 60%;
+    .project-card-left > img {
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 0px;
     }
-    .project-description > p {
-        margin-bottom: 20px;
+    .project-link-container {
+        justify-content: center;
     }
-    .project-link-cont a {
-        font-size: 2.5rem;
-    }
+    .project-link-container a {
+        font-size: 1.9rem;
+        margin-top: 10px;
+        padding: 10px 20px;
+    } 
+
 
     /* contact form  -----------------------*/
 
