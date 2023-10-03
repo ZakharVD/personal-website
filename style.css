@@ -380,6 +380,9 @@ nav ul.active {
     box-shadow: var(--box-shadow);
     background-color: var(--main-color);
 }
+#project-card-2 {
+    min-height: 220px;
+}
 .project-card-left {
     width: 35%;
 }
