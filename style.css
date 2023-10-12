@@ -380,8 +380,11 @@ nav ul.active {
     box-shadow: var(--box-shadow);
     background-color: var(--main-color);
 }
-#project-card-2 {
+#project-card-3  {
     min-height: 220px;
+}
+#project-card-2 {
+    min-height: 200px;
 }
 .project-card-left {
     width: 35%;
@@ -654,7 +657,9 @@ form > button:hover {
    
 
     /* Project section ------------------- */
-
+   .projects-title > h2 {
+    font-size: 5rem;
+   } 
     .project-card {
         flex-direction: column;
         height: auto;
