@@ -349,7 +349,7 @@ nav ul.active {
 }
 #python-logo-container {
     align-items: center;
-    margin-top: 12px;
+    margin-top: 10px;
 }
 #redux-logo-container {
     align-items: center;
@@ -558,7 +558,7 @@ form > button:hover {
         left: -100vw;
         top: 73.6px;  /*to be adjusted */
         width: 100vw;
-        height: calc(100vh - 50px); /* nav bar height here */
+        height: 100svh; /* nav bar height here */
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -570,7 +570,7 @@ form > button:hover {
     #nav-bar li {
         width: 100%;
         text-align: center;
-        padding: 25px 0;
+        padding: 25px 5px;
     }
     nav li a {
         font-size: 4rem;
