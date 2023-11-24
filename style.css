@@ -198,6 +198,10 @@ nav ul.active {
     display: flex;
     flex-direction: column;
 }
+.bio span {
+    /* font-weight: 600; */
+    text-decoration: underline;
+}
 
 /* profile picture container */
 .main-right-top {
